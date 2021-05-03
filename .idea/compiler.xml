@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="pathfinder-rest-client" />
+        <module name="pathfinder-web" />
+        <module name="RemoteApiInvoker" />
+        <module name="pathfinder-server" />
+        <module name="pathfinder-maven-plugin" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="pathfinder" target="1.7" />
+      <module name="pathfinder-maven-plugin" target="1.7" />
+      <module name="pathfinder-rest-client" target="1.7" />
+      <module name="pathfinder-server" target="1.7" />
+      <module name="pathfinder-web" target="1.7" />
+      <module name="RemoteApiInvoker" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

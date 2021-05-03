@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/remoteapiinvoker/RemoteApiInvoker.iml" filepath="$PROJECT_DIR$/remoteapiinvoker/RemoteApiInvoker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pathfinder.iml" filepath="$PROJECT_DIR$/pathfinder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pathfinder-maven-plugin/pathfinder-maven-plugin.iml" filepath="$PROJECT_DIR$/pathfinder-maven-plugin/pathfinder-maven-plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pathfinder-rest-client/pathfinder-rest-client.iml" filepath="$PROJECT_DIR$/pathfinder-rest-client/pathfinder-rest-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pathfinder-server/pathfinder-server.iml" filepath="$PROJECT_DIR$/pathfinder-server/pathfinder-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pathfinder-web/pathfinder-web.iml" filepath="$PROJECT_DIR$/pathfinder-web/pathfinder-web.iml" />
+    </modules>
+  </component>
+</project>

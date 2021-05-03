@@ -1,0 +1,55 @@
+<component name="libraryTable">
+  <library name="org.neo4j.app:neo4j-server:2.0.0-M05" type="repository">
+    <properties maven-id="org.neo4j.app:neo4j-server:2.0.0-M05" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/neo4j/app/neo4j-server/2.0.0-M05/neo4j-server-2.0.0-M05.jar!/" />
+      <root url="file://$MAVEN_REPOSITORY$/org/neo4j/neo4j/2.0.0-M05/neo4j-2.0.0-M05.pom" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/neo4j/neo4j-lucene-index/2.0.0-M05/neo4j-lucene-index-2.0.0-M05.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/3.6.2/lucene-core-3.6.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/neo4j/neo4j-graph-algo/2.0.0-M05/neo4j-graph-algo-2.0.0-M05.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/neo4j/neo4j-udc/2.0.0-M05/neo4j-udc-2.0.0-M05.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/neo4j/neo4j-graph-matching/2.0.0-M05/neo4j-graph-matching-2.0.0-M05.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/neo4j/neo4j-jmx/2.0.0-M05/neo4j-jmx-2.0.0-M05.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/neo4j/neo4j-kernel/2.0.0-M05/neo4j-kernel-2.0.0-M05.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/geronimo/specs/geronimo-jta_1.1_spec/1.1.1/geronimo-jta_1.1_spec-1.1.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/neo4j/server-api/2.0.0-M05/server-api-2.0.0-M05.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/neo4j/3rdparty/javax/ws/rs/jsr311-api/1.1.2.r612/jsr311-api-1.1.2.r612.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/neo4j/neo4j-cypher/2.0.0-M05/neo4j-cypher-2.0.0-M05.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.10.2/scala-library-2.10.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/googlecode/concurrentlinkedhashmap/concurrentlinkedhashmap-lru/1.3.1/concurrentlinkedhashmap-lru-1.3.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/parboiled/parboiled-scala_2.10/1.1.6/parboiled-scala_2.10-1.1.6.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/parboiled/parboiled-core/1.1.6/parboiled-core-1.1.6.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-classic/0.9.30/logback-classic-0.9.30.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-core/0.9.30/logback-core-0.9.30.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.6.2/slf4j-api-1.6.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-access/0.9.30/logback-access-0.9.30.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/janino/janino/2.5.10/janino-2.5.10.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/mortbay/jetty/jetty/6.1.25/jetty-6.1.25.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/mortbay/jetty/jetty-util/6.1.25/jetty-util-6.1.25.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/mortbay/jetty/servlet-api/2.5-20081211/servlet-api-2.5-20081211.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/sun/jersey/jersey-server/1.9/jersey-server-1.9.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/asm/asm/3.1/asm-3.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/sun/jersey/jersey-core/1.9/jersey-core-1.9.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/commons-lang/commons-lang/2.4/commons-lang-2.4.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/commons-beanutils/commons-beanutils-core/1.8.0/commons-beanutils-core-1.8.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/commons-beanutils/commons-beanutils/1.8.0/commons-beanutils-1.8.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/1.4/commons-io-1.4.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/jackson/jackson-jaxrs/1.9.7/jackson-jaxrs-1.9.7.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/jackson/jackson-core-asl/1.9.7/jackson-core-asl-1.9.7.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/jackson/jackson-mapper-asl/1.9.7/jackson-mapper-asl-1.9.7.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/rrd4j/rrd4j/2.0.7/rrd4j-2.0.7.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/mozilla/rhino/1.7R3/rhino-1.7R3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/sun/jersey/contribs/jersey-multipart/1.9/jersey-multipart-1.9.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jvnet/mimepull/1.6/mimepull-1.6.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/neo4j/neo4j-shell/2.0.0-M05/neo4j-shell-2.0.0-M05.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/servicemix/bundles/org.apache.servicemix.bundles.jline/0.9.94_1/org.apache.servicemix.bundles.jline-0.9.94_1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/bouncycastle/bcprov-jdk16/140/bcprov-jdk16-140.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
