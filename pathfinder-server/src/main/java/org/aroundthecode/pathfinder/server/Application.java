@@ -1,7 +1,5 @@
 package org.aroundthecode.pathfinder.server;
 
-import java.io.File;
-
 import org.aroundthecode.pathfinder.server.configuration.ConfigurationManager;
 import org.neo4j.graphdb.GraphDatabaseService;
 import org.neo4j.io.fs.FileUtils;
@@ -12,12 +10,13 @@ import org.neo4j.server.configuration.ServerConfigurator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.web.SpringBootServletInitializer;
 
+import java.io.File;
+
 @SuppressWarnings("deprecation")
-@SpringBootApplication
+//@SpringBootApplication
 public class Application extends SpringBootServletInitializer implements CommandLineRunner {
 
 	@Autowired

@@ -1,11 +1,7 @@
 package org.aroundthecode.pathfinder.server.controller;
 
-import java.io.UnsupportedEncodingException;
-import java.net.URLDecoder;
-import java.util.Map;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.aroundthecode.pathfinder.client.rest.utils.ArtifactUtils;
 import org.aroundthecode.pathfinder.client.rest.utils.RestUtils;
 import org.aroundthecode.pathfinder.server.crawler.CrawlerWrapper;
@@ -16,11 +12,11 @@ import org.json.simple.parser.ParseException;
 import org.neo4j.graphdb.Transaction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.neo4j.core.GraphDatabase;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
+import java.util.Map;
 
 @RestController
 public class PathFinderController {
@@ -86,7 +82,7 @@ public class PathFinderController {
 	{
 		String uid = URLDecoder.decode(body, "UTF-8");
 		uid = uid.substring(0, uid.lastIndexOf("="));
-		log.debug("Request body:[{}]",uid);
+		log.debug("Request body:[{}]", new Throwable(uid));
 		
 		Map<String, String> map = ArtifactUtils.splitUniqueId(uid);
 		return CrawlerWrapper.crawl(

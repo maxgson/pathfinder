@@ -1,15 +1,12 @@
 package org.aroundthecode.pathfinder.client.rest.utils;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.fail;
-
-import java.io.IOException;
-
-import org.aroundthecode.pathfinder.client.rest.utils.RestUtils;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.ParseException;
 import org.junit.Test;
+
+import java.io.IOException;
+
+import static org.junit.Assert.*;
 
 public class RestUtilsTest {
 

@@ -16,10 +16,6 @@ package org.aroundthecode.pathfinder.maven.plugin;
  * limitations under the License.
  */
 
-import java.io.IOException;
-import java.io.Writer;
-import java.util.List;
-
 import org.apache.maven.artifact.Artifact;
 import org.apache.maven.artifact.factory.ArtifactFactory;
 import org.apache.maven.artifact.repository.ArtifactRepository;
@@ -39,6 +35,10 @@ import org.apache.maven.project.ProjectBuildingException;
 import org.apache.maven.shared.dependency.graph.traversal.DependencyNodeVisitor;
 import org.aroundthecode.pathfinder.client.rest.PathfinderClient;
 import org.aroundthecode.pathfinder.maven.plugin.treeserializers.PathfinderNodeVisitor;
+
+import java.io.IOException;
+import java.io.Writer;
+import java.util.List;
 
 @Mojo( name = "crawler", defaultPhase = LifecyclePhase.NONE )
 public class PathFinderCrawlMojo extends TreeMojo

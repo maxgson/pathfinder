@@ -43,11 +43,7 @@ import org.apache.maven.shared.dependency.graph.filter.AncestorOrSelfDependencyN
 import org.apache.maven.shared.dependency.graph.filter.AndDependencyNodeFilter;
 import org.apache.maven.shared.dependency.graph.filter.ArtifactDependencyNodeFilter;
 import org.apache.maven.shared.dependency.graph.filter.DependencyNodeFilter;
-import org.apache.maven.shared.dependency.graph.traversal.BuildingDependencyNodeVisitor;
-import org.apache.maven.shared.dependency.graph.traversal.CollectingDependencyNodeVisitor;
-import org.apache.maven.shared.dependency.graph.traversal.DependencyNodeVisitor;
-import org.apache.maven.shared.dependency.graph.traversal.FilteringDependencyNodeVisitor;
-import org.apache.maven.shared.dependency.graph.traversal.SerializingDependencyNodeVisitor;
+import org.apache.maven.shared.dependency.graph.traversal.*;
 import org.apache.maven.shared.dependency.graph.traversal.SerializingDependencyNodeVisitor.GraphTokens;
 import org.apache.maven.shared.dependency.tree.DependencyTreeBuilder;
 import org.apache.maven.shared.dependency.tree.DependencyTreeBuilderException;

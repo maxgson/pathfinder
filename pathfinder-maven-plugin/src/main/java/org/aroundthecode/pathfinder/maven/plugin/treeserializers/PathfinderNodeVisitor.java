@@ -20,11 +20,6 @@ package org.aroundthecode.pathfinder.maven.plugin.treeserializers;
  * under the License.
  */
 
-import java.io.IOException;
-import java.io.Writer;
-import java.util.Iterator;
-import java.util.List;
-
 import org.apache.maven.artifact.Artifact;
 import org.apache.maven.plugin.dependency.tree.AbstractSerializingVisitor;
 import org.apache.maven.plugin.logging.Log;
@@ -34,11 +29,16 @@ import org.apache.maven.shared.dependency.graph.traversal.DependencyNodeVisitor;
 import org.aroundthecode.pathfinder.client.rest.PathfinderClient;
 import org.aroundthecode.pathfinder.client.rest.utils.ArtifactUtils;
 
+import java.io.IOException;
+import java.io.Writer;
+import java.util.Iterator;
+import java.util.List;
+
 
 public class PathfinderNodeVisitor extends AbstractSerializingVisitor implements
 DependencyNodeVisitor {
 
-	private Log log;
+	private final Log log;
 	private String prj = null;
 	private PathfinderClient client = null;
 	private MavenProject project = null;

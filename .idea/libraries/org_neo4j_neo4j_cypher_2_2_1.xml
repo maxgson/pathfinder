@@ -1,0 +1,29 @@
+<component name="libraryTable">
+  <library name="org.neo4j:neo4j-cypher:2.2.1" type="repository">
+    <properties maven-id="org.neo4j:neo4j-cypher:2.2.1" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/neo4j/neo4j-cypher/2.2.1/neo4j-cypher-2.2.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.10.5/scala-library-2.10.5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-reflect/2.10.5/scala-reflect-2.10.5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/neo4j/neo4j-kernel/2.2.1/neo4j-kernel-2.2.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/neo4j/neo4j-primitive-collections/2.2.1/neo4j-primitive-collections-2.2.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/neo4j/neo4j-unsafe/2.2.1/neo4j-unsafe-2.2.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/neo4j/neo4j-io/2.2.1/neo4j-io-2.2.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/neo4j/neo4j-csv/2.2.1/neo4j-csv-2.2.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/neo4j/neo4j-lucene-index/2.2.1/neo4j-lucene-index-2.2.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/3.6.2/lucene-core-3.6.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/neo4j/neo4j-graph-matching/2.2.1/neo4j-graph-matching-2.2.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/neo4j/neo4j-graph-algo/2.2.1/neo4j-graph-algo-2.2.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/neo4j/neo4j-cypher-compiler-1.9/2.0.4/neo4j-cypher-compiler-1.9-2.0.4.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/neo4j/neo4j-cypher-compiler-2.0/2.0.4/neo4j-cypher-compiler-2.0-2.0.4.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/neo4j/neo4j-cypher-compiler-2.1/2.1.7/neo4j-cypher-compiler-2.1-2.1.7.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/neo4j/neo4j-cypher-compiler-2.2/2.2.1/neo4j-cypher-compiler-2.2-2.2.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/parboiled/parboiled-scala_2.10/1.1.7/parboiled-scala_2.10-1.1.7.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/parboiled/parboiled-core/1.1.7/parboiled-core-1.1.7.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/net/sf/opencsv/opencsv/2.3/opencsv-2.3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/googlecode/concurrentlinkedhashmap/concurrentlinkedhashmap-lru/1.4/concurrentlinkedhashmap-lru-1.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

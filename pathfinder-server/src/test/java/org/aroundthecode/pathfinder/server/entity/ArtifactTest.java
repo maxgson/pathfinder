@@ -1,9 +1,9 @@
 package org.aroundthecode.pathfinder.server.entity;
 
-import static org.junit.Assert.*;
-
 import org.aroundthecode.pathfinder.client.rest.utils.ArtifactUtils;
 import org.junit.Test;
+
+import static org.junit.Assert.*;
 
 public class ArtifactTest {
 

@@ -1,11 +1,11 @@
 package org.aroundthecode.pathfinder.server.configuration;
 
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
-
-import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.LogManager;
 
 public class ConfigurationManager {
 	
@@ -24,9 +24,9 @@ public class ConfigurationManager {
 		try {
 			InputStream is = ConfigurationManager.class.getClassLoader().getResourceAsStream(CONFIG);
 			p.load(is);
-			log.info("Loaded [{}]",CONFIG);
+			log.info("Loaded [{}]", new Throwable(CONFIG));
 		} catch (IOException e) {
-			log.error("Error loading [{}]",CONFIG);
+			log.error("Error loading [{}]", new Throwable(CONFIG));
 		}
 	}
 	

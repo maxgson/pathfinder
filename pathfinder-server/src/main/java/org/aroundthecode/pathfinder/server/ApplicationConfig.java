@@ -12,9 +12,9 @@ import org.springframework.data.neo4j.config.Neo4jConfiguration;
 @EnableNeo4jRepositories(basePackages = "org.aroundthecode.pathfinder.server")
 public class ApplicationConfig extends Neo4jConfiguration {
 
-	public ApplicationConfig() {
-		setBasePackage("org.aroundthecode.pathfinder.server");
-	}
+	//public ApplicationConfig() {
+	//	setBasePackage("org.aroundthecode.pathfinder.server");
+	//}
 
 	@Bean(destroyMethod = "shutdown")
 	GraphDatabaseService graphDatabaseService() {

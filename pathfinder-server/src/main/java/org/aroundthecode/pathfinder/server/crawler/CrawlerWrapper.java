@@ -1,25 +1,21 @@
 package org.aroundthecode.pathfinder.server.crawler;
 
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+import org.apache.maven.shared.invoker.*;
+import org.aroundthecode.pathfinder.server.crawler.handler.JsonResponseHandler;
+import org.json.simple.JSONObject;
+
 import java.io.File;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.Collections;
 import java.util.Properties;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.apache.maven.shared.invoker.DefaultInvocationRequest;
-import org.apache.maven.shared.invoker.DefaultInvoker;
-import org.apache.maven.shared.invoker.InvocationRequest;
-import org.apache.maven.shared.invoker.InvocationResult;
-import org.apache.maven.shared.invoker.Invoker;
-import org.aroundthecode.pathfinder.server.crawler.handler.JsonResponseHandler;
-import org.json.simple.JSONObject;
-
 public class CrawlerWrapper {
 
 	private static String mvnHome = "/opt/apache-maven";
-	private static Invoker invoker = new DefaultInvoker();
+	private static final Invoker invoker = new DefaultInvoker();
 	private static File filePom = null;
 	private static final Logger log = LogManager.getLogger(CrawlerWrapper.class.getName());
 
@@ -28,13 +24,13 @@ public class CrawlerWrapper {
 		String mHome = System.getenv("M2_HOME");
 		if(mHome==null){
 			mHome = getMvnHome();
-			log.warn("No M2_HOME set, using [{}]",mHome );
+			log.warn("No M2_HOME set, using [{}]",new Throwable(mHome) );
 		}
 
 		invoker.setMavenHome( new File(mHome) );
 
 		URL pomFile = CrawlerWrapper.class.getClassLoader().getResource("embedder/pom.xml");
-		log.info("Dummy pom file [{}]",pomFile.getFile() );
+		log.info("Dummy pom file [{}]", new Throwable(pomFile.getFile()) );
 		try {
 			filePom = new File(pomFile.toURI());
 		} catch(URISyntaxException e) {
@@ -59,7 +55,7 @@ public class CrawlerWrapper {
 		params.setProperty("crawler.version", 		version);
 
 		request.setProperties(params);
-		log.info("Request [{}]", params );
+		log.info("Request [{}]", new Throwable(String.valueOf(params)) );
 		InvocationResult result;
 		try {
 			result = invoker.execute( request );

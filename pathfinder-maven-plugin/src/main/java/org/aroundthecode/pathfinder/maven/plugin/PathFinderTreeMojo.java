@@ -16,9 +16,6 @@ package org.aroundthecode.pathfinder.maven.plugin;
  * limitations under the License.
  */
 
-import java.io.IOException;
-import java.io.Writer;
-
 import org.apache.maven.plugin.dependency.tree.TreeMojo;
 import org.apache.maven.plugins.annotations.LifecyclePhase;
 import org.apache.maven.plugins.annotations.Mojo;
@@ -26,6 +23,9 @@ import org.apache.maven.plugins.annotations.Parameter;
 import org.apache.maven.shared.dependency.graph.traversal.DependencyNodeVisitor;
 import org.aroundthecode.pathfinder.client.rest.PathfinderClient;
 import org.aroundthecode.pathfinder.maven.plugin.treeserializers.PathfinderNodeVisitor;
+
+import java.io.IOException;
+import java.io.Writer;
 
 @Mojo( name = "store-tree", defaultPhase = LifecyclePhase.NONE )
 public class PathFinderTreeMojo extends TreeMojo

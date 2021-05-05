@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="pathfinder-rest-client">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/pathfinder-rest-client" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/pathfinder-rest-client/src/main/java" />
+      <root url="file://$PROJECT_DIR$/pathfinder-rest-client/src/test/java" />
+    </SOURCES>
+  </library>
+</component>

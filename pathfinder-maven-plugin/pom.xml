@@ -21,7 +21,7 @@
 	</properties>
 
 	<dependencies>
-	
+
 		<dependency>
 			<groupId>org.aroundthecode.pathfinder</groupId>
 			<artifactId>pathfinder-rest-client</artifactId>
@@ -80,6 +80,26 @@
 						<id>help-goal</id>
 						<goals>
 							<goal>helpmojo</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.aroundthecode.pathfinder</groupId>
+				<artifactId>pathfinder-maven-plugin</artifactId>
+				<version>0.1.0-SNAPSHOT</version>
+				<configuration>
+					<neo4jProtocol>http</neo4jProtocol>
+					<neo4jHost>127.0.0.1</neo4jHost>
+					<neo4jPort>8080</neo4jPort>
+					<neo4jPath>/</neo4jPath>
+				</configuration>
+				<executions>
+					<execution>
+						<id>store-tree</id>
+						<phase>deploy</phase>
+						<goals>
+							<goal>store-tree</goal>
 						</goals>
 					</execution>
 				</executions>

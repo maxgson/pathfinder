@@ -20,20 +20,20 @@ package org.aroundthecode.pathfinder.maven.plugin.treeserializers;
  * under the License.
  */
 
-import java.io.Writer;
-import java.util.Iterator;
-import java.util.List;
-
 import org.apache.maven.plugin.dependency.tree.AbstractSerializingVisitor;
 import org.apache.maven.plugin.logging.Log;
 import org.apache.maven.shared.dependency.graph.DependencyNode;
 import org.apache.maven.shared.dependency.graph.traversal.DependencyNodeVisitor;
 
+import java.io.Writer;
+import java.util.Iterator;
+import java.util.List;
+
 
 public class LogNodeVisitor extends AbstractSerializingVisitor implements
 		DependencyNodeVisitor {
 
-	private Log log;
+	private final Log log;
 	private String prj = null;
 
 	public LogNodeVisitor(Writer writer, Log log) {
@@ -69,7 +69,7 @@ public class LogNodeVisitor extends AbstractSerializingVisitor implements
 			sb.append(" requires ");
 			sb.append(szTo);
 			sb.append("\n");
-			writer.println(sb.toString());
+			writer.println(sb);
 			
 			//STORE SZFROM TO DB
 			//STORE SZTO TO DB

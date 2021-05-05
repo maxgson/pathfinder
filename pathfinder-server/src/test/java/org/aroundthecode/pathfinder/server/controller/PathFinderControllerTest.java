@@ -1,11 +1,5 @@
 package org.aroundthecode.pathfinder.server.controller;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.fail;
-
-import java.io.IOException;
-
 import org.aroundthecode.pathfinder.client.rest.PathfinderClient;
 import org.aroundthecode.pathfinder.client.rest.utils.ArtifactUtils;
 import org.aroundthecode.pathfinder.client.rest.utils.ArtifactUtils.Dependency;
@@ -20,12 +14,16 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.MethodSorters;
 import org.springframework.boot.test.SpringApplicationConfiguration;
-import org.springframework.boot.test.WebIntegrationTest;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+//import org.springframework.boot.test.WebIntegrationTest;
+//import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-@RunWith(SpringJUnit4ClassRunner.class)
+import java.io.IOException;
+
+import static org.junit.Assert.*;
+
+//@RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = Application.class)
-@WebIntegrationTest
+//@WebIntegrationTest
 @FixMethodOrder( MethodSorters.NAME_ASCENDING)
 public class PathFinderControllerTest {
 
@@ -102,7 +100,7 @@ public class PathFinderControllerTest {
 		try {
 			JSONObject o = client.getArtifact(ArtifactTest.ID);
 			assertNotNull(o);
-			System.out.println(o.toString());
+			System.out.println(o);
 		}
 		catch (IOException | ParseException e) {
 			fail(e.getMessage());

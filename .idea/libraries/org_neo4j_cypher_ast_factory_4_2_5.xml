@@ -1,0 +1,22 @@
+<component name="libraryTable">
+  <library name="org.neo4j:cypher-ast-factory:4.2.5" type="repository">
+    <properties maven-id="org.neo4j:cypher-ast-factory:4.2.5" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/neo4j/cypher-ast-factory/4.2.5/cypher-ast-factory-4.2.5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/neo4j/neo4j-values/4.2.5/neo4j-values-4.2.5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/neo4j/neo4j-graphdb-api/4.2.5/neo4j-graphdb-api-4.2.5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/neo4j/annotations/4.2.5/annotations-4.2.5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/collections/eclipse-collections/10.3.0/eclipse-collections-10.3.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/collections/eclipse-collections-api/10.3.0/eclipse-collections-api-10.3.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/neo4j/neo4j-common/4.2.5/neo4j-common-4.2.5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/neo4j/neo4j-resource/4.2.5/neo4j-resource-4.2.5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/neo4j/neo4j-collections/4.2.5/neo4j-collections-4.2.5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/neo4j/neo4j-exceptions/4.2.5/neo4j-exceptions-4.2.5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/neo4j/neo4j-unsafe/4.2.5/neo4j-unsafe-4.2.5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/net/java/dev/jna/jna/5.6.0/jna-5.6.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

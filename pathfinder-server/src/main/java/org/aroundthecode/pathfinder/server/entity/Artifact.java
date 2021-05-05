@@ -1,9 +1,5 @@
 package org.aroundthecode.pathfinder.server.entity;
 
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
-
 import org.aroundthecode.pathfinder.client.rest.utils.ArtifactUtils;
 import org.aroundthecode.pathfinder.client.rest.utils.ArtifactUtils.Dependency;
 import org.json.simple.JSONObject;
@@ -12,6 +8,10 @@ import org.springframework.data.neo4j.annotation.Fetch;
 import org.springframework.data.neo4j.annotation.GraphId;
 import org.springframework.data.neo4j.annotation.NodeEntity;
 import org.springframework.data.neo4j.annotation.RelatedTo;
+
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 
 @NodeEntity
@@ -193,7 +193,7 @@ public class Artifact {
 		if (! (other instanceof Artifact)) 
 			return false;
 
-		return this.toString().equals(((Artifact)other).toString());
+		return this.toString().equals(other.toString());
 	}
 
 	public static Artifact parsePropertiesFromJson(JSONObject o ){

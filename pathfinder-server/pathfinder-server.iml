@@ -12,21 +12,31 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Maven: org.apache.maven.shared:maven-invoker:2.2" level="project" />
+    <orderEntry type="library" name="org.neo4j.app:neo4j-server:2.0.0-M05" level="project" />
+    <orderEntry type="library" name="org.neo4j:neo4j-cypher:2.3.0-M01" level="project" />
+    <orderEntry type="library" name="org.springframework.boot:spring-boot-starter-data-rest:1.1.1.RELEASE" level="project" />
+    <orderEntry type="library" name="org.neo4j" level="project" />
+    <orderEntry type="library" name="org.neo4j:neo4j-cypher:2.2.1" level="project" />
+    <orderEntry type="library" name="org.neo4j:cypher-ast-factory:4.2.5" level="project" />
+    <orderEntry type="library" name="org.neo4j:neo4j-cypher-commons:2.1.8" level="project" />
+    <orderEntry type="library" name="org.neo4j:neo4j-cypher:2.3.0-M011" level="project" />
+    <orderEntry type="library" name="log4j:log4j:1.2.17" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven.shared:maven-invoker:2.1.1" level="project" />
     <orderEntry type="module" module-name="pathfinder-rest-client" />
     <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-core:2.4.1" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-data-rest:1.3.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-neo4j:3.4.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.neo4j.app:neo4j-server:4.2.5" level="project" />
     <orderEntry type="library" name="Maven: org.neo4j.app:neo4j-server:static-web:4.2.5" level="project" />
+    <orderEntry type="library" name="Maven: org.neo4j:neo4j-cypher-dsl:2021.2.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web:1.3.1.RELEASE" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.springframework.boot:spring-boot-starter-tomcat:1.3.1.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.12" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-test:4.2.4.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-utils:3.0.20" level="project" />
-    <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-component-annotations:1.6" level="project" />
-    <orderEntry type="library" name="Maven: com.googlecode.json-simple:json-simple:1.1.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-api:2.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-utils:3.0.8" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-component-annotations:1.5.5" level="project" />
+    <orderEntry type="library" name="Maven: com.googlecode.json-simple:json-simple:1.1.1" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:1.3.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.6.4" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.6.4" level="project" />
@@ -39,7 +49,6 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:4.2.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.aspectj:aspectjrt:1.8.7" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:1.11.2.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.neo4j:neo4j-cypher-dsl:2.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.neo4j:neo4j:2.2.5" level="project" />
     <orderEntry type="library" name="Maven: javax.transaction:javax.transaction-api:1.2" level="project" />
     <orderEntry type="library" name="Maven: commons-io:commons-io:2.4" level="project" />
@@ -64,6 +73,7 @@
     <orderEntry type="library" name="Maven: javax.activation:activation:1.1.1" level="project" />
     <orderEntry type="library" name="Maven: org.glassfish.jaxb:jaxb-runtime:2.3.2" level="project" />
     <orderEntry type="library" name="Maven: javax.xml.bind:jaxb-api:2.3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apiguardian:apiguardian-api:1.1.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-validation:1.3.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-web:4.2.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:4.2.4.RELEASE" level="project" />
@@ -216,9 +226,7 @@
     <orderEntry type="library" name="Maven: com.profesorfalken:jPowerShell:3.0" level="project" />
     <orderEntry type="library" name="Maven: commons-collections:commons-collections:3.2.2" level="project" />
     <orderEntry type="library" name="Maven: org.neo4j:neo4j-procedure-api:4.2.5" level="project" />
-    <orderEntry type="library" name="org.neo4j.app:neo4j-server:2.0.0-M05" level="project" />
-    <orderEntry type="library" name="org.neo4j:neo4j-cypher:2.3.0-M01" level="project" />
-    <orderEntry type="library" name="org.springframework.boot:spring-boot-starter-data-rest:1.1.1.RELEASE" level="project" />
-    <orderEntry type="library" name="org.neo4j" level="project" />
+    <orderEntry type="library" name="pathfinder-rest-client" level="project" />
+    <orderEntry type="module" module-name="pathfinder-maven-plugin" />
   </component>
 </module>

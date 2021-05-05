@@ -1,14 +1,14 @@
 package org.aroundthecode.pathfinder.client.rest;
 
-import java.io.IOException;
-import java.net.InetSocketAddress;
-import java.net.Socket;
-import java.util.Map;
-
 import org.aroundthecode.pathfinder.client.rest.utils.ArtifactUtils;
 import org.aroundthecode.pathfinder.client.rest.utils.RestUtils;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.ParseException;
+
+import java.io.IOException;
+import java.net.InetSocketAddress;
+import java.net.Socket;
+import java.util.Map;
 
 public class PathfinderClient {
 
