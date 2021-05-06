@@ -1,203 +1,302 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-	<parent>
-		<groupId>org.aroundthecode.pathfinder</groupId>
-		<artifactId>pathfinder</artifactId>
-		<version>0.1.0-SNAPSHOT</version>
-		<relativePath>../pom.xml</relativePath>
-	</parent>
+    <parent>
+        <groupId>org.aroundthecode.pathfinder</groupId>
+        <artifactId>pathfinder</artifactId>
+        <version>0.1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
 
-	<artifactId>pathfinder-server</artifactId>
-	<packaging>war</packaging>
+    <artifactId>pathfinder-server</artifactId>
+    <packaging>war</packaging>
 
-	<name>Pathfinder Server  - ${project.groupId}:${project.artifactId}:${project.packaging}</name>
-	<description>Neo4j server instance to manage pathfinder artifacts data</description>
+    <name>Pathfinder Server  - ${project.groupId}:${project.artifactId}:${project.packaging}</name>
+    <description>Neo4j server instance to manage pathfinder artifacts data</description>
 
-	<properties>
-		<run.jvmArguments>-Dserver.port=${server.port}</run.jvmArguments>
-	</properties>
+    <properties>
+        <run.jvmArguments>-Dserver.port=${server.port}</run.jvmArguments>
+    </properties>
 
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<!-- Import dependency management from Spring Boot -->
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-dependencies</artifactId>
-				<version>${spring.boot.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
-
-
-	<dependencies>
-
-		<dependency>
-			<groupId>org.apache.maven.shared</groupId>
-			<artifactId>maven-invoker</artifactId>
-			<version>2.2</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.aroundthecode.pathfinder</groupId>
-			<artifactId>pathfinder-rest-client</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.aroundthecode.pathfinder</groupId>
-			<artifactId>pathfinder-web</artifactId>
-			<version>${project.version}</version>
-			<type>zip</type>
-		</dependency>
-
-		<!-- why not included by client? -->
-		<dependency>
-			<groupId>com.googlecode.json-simple</groupId>
-			<artifactId>json-simple</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.apache.logging.log4j</groupId>
-			<artifactId>log4j-core</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-rest</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.data</groupId>
-			<artifactId>spring-data-neo4j</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.neo4j.app</groupId>
-			<artifactId>neo4j-server</artifactId>
-			<version>${neo4j.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.neo4j.app</groupId>
-			<artifactId>neo4j-server</artifactId>
-			<version>${neo4j.version}</version>
-			<classifier>static-web</classifier>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-tomcat</artifactId>
-			<scope>provided</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<scope>test</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-test</artifactId>
-			<scope>test</scope>
-		</dependency>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <!-- Import dependency management from Spring Boot -->
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring.boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 
-	</dependencies>
-
-	<build>
-
-		<testResources>
-			<testResource>
-				<directory>src/test/resources</directory>
-				<filtering>true</filtering>
-			</testResource>
-		</testResources>
-		<resources>
-			<resource>
-				<directory>src/main/resources</directory>
-				<filtering>true</filtering>
-			</resource>
-		</resources>
+    <dependencies>
+        
+        <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-neo4j-cross-store -->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-neo4j-cross-store</artifactId>
+            <version>3.4.2.RELEASE</version>
+        </dependency>
 
 
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>4.2.4.RELEASE</version>
+        </dependency>
 
-			<plugin>
-				<artifactId>maven-war-plugin</artifactId>
-				<configuration>
-					<failOnMissingWebXml>false</failOnMissingWebXml>
-				</configuration>
-			</plugin>
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>4.2.4.RELEASE</version>
+        </dependency>
 
-			<plugin>
-				<artifactId>maven-dependency-plugin</artifactId>
-				<executions>
-					<execution>
-						<id>unpack-web-content</id>
-						<phase>prepare-package</phase>
-						<goals>
-							<goal>unpack-dependencies</goal>
-						</goals>
-						<configuration>
-							<outputDirectory>${project.build.directory}/classes/public</outputDirectory>
-							<includeArtifactIds>pathfinder-web</includeArtifactIds>
-							<includeTypes>zip</includeTypes>
-							<overWriteIfNewer>false</overWriteIfNewer>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
+        <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-neo4j-cross-store -->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-neo4j-cross-store</artifactId>
+            <version>3.4.2.RELEASE</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.hibernate.javax.persistence/hibernate-jpa-2.1-api -->
+        <dependency>
+            <groupId>org.hibernate.javax.persistence</groupId>
+            <artifactId>hibernate-jpa-2.1-api</artifactId>
+            <version>1.0.0.Final</version>
+        </dependency>
+
+            
+        <!-- https://mvnrepository.com/artifact/org.neo4j/neo4j-cypher-dsl -->
+        <dependency>
+            <groupId>org.neo4j</groupId>
+            <artifactId>neo4j-cypher-dsl</artifactId>
+            <version>2021.2.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-jdk14 -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-jdk14</artifactId>
+            <version>1.7.13</version>
+        
+        </dependency>
+        
+        <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-neo4j-cross-store -->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-neo4j-cross-store</artifactId>
+            <version>3.4.2.RELEASE</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.1</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpcore</artifactId>
+            <version>4.4.4</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.apache.maven.shared</groupId>
+            <artifactId>maven-invoker</artifactId>
+            <version>2.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.aroundthecode.pathfinder</groupId>
+            <artifactId>pathfinder-rest-client</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.aroundthecode.pathfinder</groupId>
+            <artifactId>pathfinder-web</artifactId>
+            <version>${project.version}</version>
+            <type>zip</type>
+        </dependency>
+
+        <!-- why not included by client? -->
+        <dependency>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-rest</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-neo4j</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.neo4j.app</groupId>
+            <artifactId>neo4j-server</artifactId>
+            <version>${neo4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.neo4j.app</groupId>
+            <artifactId>neo4j-server</artifactId>
+            <version>${neo4j.version}</version>
+            <classifier>static-web</classifier>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>pathfinder-maven-plugin</artifactId>
+            <version>${project.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+
+        <testResources>
+            <testResource>
+                <directory>src/test/resources</directory>
+                <filtering>true</filtering>
+            </testResource>
+        </testResources>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+
+
+        <plugins>
+            
+            <plugin>
+                    <groupId>org.aroundthecode.pathfinder</groupId>
+                    <artifactId>pathfinder-maven-plugin</artifactId>
+                    <version>0.1.0-SNAPSHOT</version>
+                    <configuration>
+                        <neo4jProtocol>http</neo4jProtocol>
+                        <neo4jHost>127.0.0.1</neo4jHost>
+                        <neo4jPort>8080</neo4jPort>
+                        <neo4jPath>/</neo4jPath>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>store-tree</id>
+                            <phase>deploy</phase>
+                            <goals>
+                                <goal>store-tree</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+
+            <plugin>
+                <artifactId>maven-war-plugin</artifactId>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>unpack-web-content</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>unpack-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.directory}/classes/public</outputDirectory>
+                            <includeArtifactIds>pathfinder-web</includeArtifactIds>
+                            <includeTypes>zip</includeTypes>
+                            <overWriteIfNewer>false</overWriteIfNewer>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
 
 
 
-		</plugins>
-	</build>
+        </plugins>
+    </build>
 
-	<profiles>
-		<profile>
-			<id>openshift</id>
-			<build>
-				<plugins>
-					<plugin>
-						<artifactId>maven-antrun-plugin</artifactId>
-						<executions>
-							<execution>
-								<phase>package</phase>
-								<configuration>
-									<target>
-										<!-- move final war where openshift can find it -->
-										<move
-											file="${project.build.directory}/${project.artifactId}-${project.version}.war"
-											tofile="${basedir}/../webapps/ROOT.war" overwrite="true" />
-										<!-- cleanup to save space -->
-										<delete dir="${project.build.directory}" />
-										<delete dir="${basedir}/../docs" />
-										<delete dir="${basedir}/../data" />
-										<delete dir="${basedir}/../pathfinder-web/target" />
-										<delete dir="${basedir}/../pathfinder-rest-client/target" />
-										<delete dir="${basedir}/../pathfinder-maven-plugin/target" />
-									</target>
-								</configuration>
-								<goals>
-									<goal>run</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-	</profiles>
+    <profiles>
+        <profile>
+            <id>openshift</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <artifactId>maven-antrun-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <phase>package</phase>
+                                <configuration>
+                                    <target>
+                                        <!-- move final war where openshift can find it -->
+                                        <move
+                                            file="${project.build.directory}/${project.artifactId}-${project.version}.war"
+                                            tofile="${basedir}/../webapps/ROOT.war" overwrite="true" />
+                                        <!-- cleanup to save space -->
+                                        <delete dir="${project.build.directory}" />
+                                        <delete dir="${basedir}/../docs" />
+                                        <delete dir="${basedir}/../data" />
+                                        <delete dir="${basedir}/../pathfinder-web/target" />
+                                        <delete dir="${basedir}/../pathfinder-rest-client/target" />
+                                        <delete dir="${basedir}/../pathfinder-maven-plugin/target" />
+                                    </target>
+                                </configuration>
+                                <goals>
+                                    <goal>run</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 	
 
 </project>

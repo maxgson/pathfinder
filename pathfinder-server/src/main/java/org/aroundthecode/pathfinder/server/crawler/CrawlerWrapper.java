@@ -23,7 +23,7 @@ import org.json.simple.JSONObject;
  */
 public class CrawlerWrapper {
 
-	private static String mvnHome = "/opt/apache-maven";
+	private static String mvnHome = "C:\\Program Files\\apache-maven-3.8.1";
 	private static Invoker invoker = new DefaultInvoker();
 	private static File filePom = null;
 	private static final Logger log = LogManager.getLogger(CrawlerWrapper.class.getName());
