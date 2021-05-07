@@ -48,7 +48,7 @@
     </issueManagement>
 
     <properties>
-        <java.version>1.7</java.version>
+        <java.version>11</java.version>
         <sonar.java.source>1.7</sonar.java.source>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
@@ -78,7 +78,7 @@
         <failsafe.extraargs></failsafe.extraargs>
 
         <!-- main server port -->
-        <server.port>8080</server.port>
+        <server.port>8081</server.port>
         <neo4j.port>${server.port}</neo4j.port>
 
         <!-- instance also neo4j server -->
@@ -136,6 +136,8 @@
                     <artifactId>maven-resources-plugin</artifactId>
                     <version>2.7</version>
                 </plugin>
+                
+             
 
                 <plugin>
                     <groupId>org.springframework.boot</groupId>
@@ -159,11 +161,11 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
+                
                 <configuration>
-<!--                    <argLine>-Xmx1G -XX:+UseConcMarkSweepGC
-                        -XX:+CMSClassUnloadingEnabled ${jacoco.agent.ut.arg}
-                        ${surefire.extraargs}</argLine>-->
-                        <argLine>-Xss2m -XX:MaxPermSize=256m</argLine>
+                    <testFailureIgnore>true</testFailureIgnore>
+                    <argLine>-Xmx1024m</argLine>
+                    <!--                    <argLine>-Xmx1G -XX:MaxPermSize=256m</argLine>-->
                     <excludes>
                         <exclude>**/*IntegrationTest*</exclude>
                     </excludes>
@@ -172,14 +174,14 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-failsafe-plugin</artifactId>
+                
                 <configuration>
-                    <argLine>-Xmx1G -XX:+UseConcMarkSweepGC
-                        -XX:+CMSClassUnloadingEnabled ${jacoco.agent.it.arg}
-                        ${failsafe.extraargs}</argLine>
+                    <argLine>-Xmx1024m</argLine>
+                    <!--                         <argLine>-Xmx1G -XX:MaxPermSize=256m</argLine>-->
                     <includes>
                         <include>**/*IntegrationTest*</include>
                     </includes>
-                    <reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>
+                    <!--                    <reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>-->
                 </configuration>
                 <executions>
                     <execution>
@@ -226,7 +228,7 @@
         </plugins>
     </build>
 
-    <!--    <repositories>
+    <!--        <repositories>
       <repository>
             <id>spring-releases</id>
             <name>Spring Releases</name>

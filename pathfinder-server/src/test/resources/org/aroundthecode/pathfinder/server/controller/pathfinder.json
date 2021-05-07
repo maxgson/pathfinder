@@ -249,7 +249,7 @@
       "TEST": [],
       "IMPORT": [],
       "COMPILE": [
-        "org.neo4j:neo4j-cypher-dsl:jar::2.0.1",
+        "org.neo4j:neo4j-cypher-dsl:jar::2021.2.0",
         "org.springframework.data:spring-data-commons:jar::1.11.2.RELEASE",
         "org.aspectj:aspectjrt:jar::1.8.7",
         "org.springframework:spring-expression:jar::4.2.4.RELEASE",
@@ -940,8 +940,8 @@
     "packaging": "jar",
     "classifier": "",
     "artifactId": "neo4j-cypher-dsl",
-    "version": "2.0.1",
-    "uniqueId": "org.neo4j:neo4j-cypher-dsl:jar::2.0.1"
+    "version": "2021.2.0",
+    "uniqueId": "org.neo4j:neo4j-cypher-dsl:jar::2021.2.0"
   },
   {
     "groupId": "org.neo4j",
